@@ -565,10 +565,23 @@ body {
   .cover_page-description {
     font-size: var(--font-h6);
   }
+
+  #biological-characteristics,
+  #personality {
+    height: 90dvh;
+    align-content: center;
+    margin: 0;
+  }
+  #biological-characteristics .section-title {
+    width: 100%;
+  }
   #biological-characteristics .article-title {
     font-size: var(--font-h4);
   }
   #biological-characteristics .article-text {
     font-size: var(--font-h6);
+  }
+  #History {
+    margin-top: 20rem;
   }
 }
