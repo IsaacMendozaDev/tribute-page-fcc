@@ -170,7 +170,9 @@ body {
 #Information {
   margin-bottom: 2rem;
 }
-
+#image {
+  max-width: 100%;
+}
 #biological-characteristics {
   display: flex;
   flex-direction: row;
@@ -182,11 +184,11 @@ body {
 #biological-characteristics .article-text {
   background-color: var(--primary-950);
   color: var(--neutral-100);
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px var(--neutral-950);
   max-width: 425px;
-  max-height: 572px;
+  min-height: 575px;
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -196,7 +198,7 @@ body {
 }
 #biological-characteristics .article-title {
   color: var(--primary-400);
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 #personality {
   padding: 0;
@@ -236,8 +238,6 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-
-  animation: slideInFromBottom 2s ease-out;
 }
 .section-title {
   font-size: var(--font-h3);
@@ -249,6 +249,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  max-width: 300px;
 }
 .section-img {
   max-width: 300px;
@@ -262,6 +263,14 @@ body {
   flex-direction: column;
   align-items: center;
   font-size: var(--font-h5);
+}
+#tribute-link {
+  text-decoration: none;
+  color: inherit;
+}
+#tribute-link:hover {
+  text-decoration: underline;
+  color: rgba(57, 57, 223, 0.89);
 }
 .section-img-description span:first-of-type {
   font-weight: bold;
@@ -554,6 +563,12 @@ body {
     color: var(--neutral-400);
   }
   .cover_page-description {
+    font-size: var(--font-h6);
+  }
+  #biological-characteristics .article-title {
+    font-size: var(--font-h4);
+  }
+  #biological-characteristics .article-text {
     font-size: var(--font-h6);
   }
 }
